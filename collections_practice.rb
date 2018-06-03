@@ -30,8 +30,6 @@ def merge_data(keys, data)
     person_obj.each do |k, v|
       v.merge!({:first_name => k})
       output_arr << v
-      puts k
-      puts v 
     end
   end
   output_arr
