@@ -34,6 +34,7 @@ def merge_data(keys, data)
       puts v 
     end
   end
+  output_arr
 end
 
 def find_cool(hash)
