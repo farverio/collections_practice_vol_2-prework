@@ -41,7 +41,7 @@ def organize_schools(schools)
   
   schools.each do |k, v|
     puts k
-    puts v
+    puts v[:location]
     if !output[[k][:location]]
       output[[k][:location]] = []
       output[[k][:location]] << k
