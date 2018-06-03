@@ -25,6 +25,7 @@ def count_elements(array)
 end
 
 def merge_data(keys, data)
+  merged_data = []
   keys.each do |key, val|
     if !data[:key]
       data[key] = val
