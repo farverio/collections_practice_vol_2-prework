@@ -15,10 +15,9 @@ def remove_non_strings(array)
 end
 
 def count_elements(array)
-  array.each do |el| 
-    el.each do |key, value|
-      puts key
-      puts value
+  array.map do |el| 
+    el.map do |key, value|
+      key[:count] = array.count {|el| el[:name] == key}
     end
   end
 end
