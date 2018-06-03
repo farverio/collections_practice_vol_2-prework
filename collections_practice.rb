@@ -25,7 +25,10 @@ def count_elements(array)
 end
 
 def merge_data(keys, data)
-  data.map
+  data.map do |k, v|
+    puts k
+    puts v 
+  end
 end
 
 def find_cool(hash)
