@@ -41,8 +41,9 @@ def organize_schools(schools)
   
   schools.each do |k, v|
     puts k
-    puts v[:location]
-    if !output[[k][:location]]
+    puts v[:location].to_sym
+    
+    if !output[v[:location].to_sym]
       output[[k][:location]] = []
       output[[k][:location]] << k
     else
