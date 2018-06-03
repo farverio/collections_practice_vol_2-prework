@@ -15,7 +15,6 @@ def remove_non_strings(array)
 end
 
 def count_elements(array)
-  output_hash = {}
   array.each do |el| 
     if output_hash.include? el[:name]
       output_hash[el][:count] += 1
