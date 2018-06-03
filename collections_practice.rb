@@ -25,9 +25,10 @@ def count_elements(array)
 end
 
 def merge_data(keys, data)
+  puts keys
   data.map do |person_obj|
     person_obj.map do |k, v|
-      v.merge!({keys.to_sym => k})
+      v.merge!({keys => k})
       puts k
       puts v 
     end
