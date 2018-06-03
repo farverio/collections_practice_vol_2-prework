@@ -25,7 +25,7 @@ def count_elements(array)
 end
 
 def merge_data(keys, data)
-  data.
+  data.map
 end
 
 def find_cool(hash)
