@@ -33,7 +33,7 @@ def merge_data(keys, data)
 end
 
 def find_cool(hash)
-  hash.select {|el| el.values.includes? "cool"}
+  hash.select {|el| el.values.include? "cool"}
 end
 
 def organize_schools(schools)
