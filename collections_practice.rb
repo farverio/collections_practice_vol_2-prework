@@ -42,9 +42,9 @@ def organize_schools(schools)
   schools.each do |k, v|
     if !output.key? v[:location]
       output[v[:location].to_sym] = []
-      output[:location].to_sym] << k
+      output[v[:location].to_sym] << k
     else
-      output[:location].to_sym] << k
+      output[v[:location].to_sym] << k
     end
   end
   
