@@ -17,7 +17,7 @@ end
 def count_elements(array)
   array.map do |el| 
     el.map do |key, value|
-      key[:count] = array.count {|el| el["name"] == key}
+      array.count {|el| el[:name] == key}
     end
   end
 end
