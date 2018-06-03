@@ -41,10 +41,10 @@ def organize_schools(schools)
   
   schools.each do |k, v|
     if !formatted_schools.key? v[:location]
-      formatted_schools[v[:location].to_sym] = []
-      formatted_schools[v[:location].to_sym] << k
+      formatted_schools[v[:location]] = []
+      formatted_schools[v[:location]] << k
     else
-      formatted_schools[v[:location].to_sym] << k
+      formatted_schools[v[:location]] << k
     end
   end
   
