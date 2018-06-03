@@ -40,6 +40,8 @@ def organize_schools(schools)
   formatted_schools = {}
   
   schools.each do |k, v|
+    puts k
+    puts v
     if !output[[k][:location]]
       output[[k][:location]] = []
       output[[k][:location]] << k
