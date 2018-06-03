@@ -33,11 +33,7 @@ def merge_data(keys, data)
 end
 
 def find_cool(hash)
-  hash.each do |k, v| 
-    puts k
-    puts v
-    k.to_s == "cool" || v.to_s == "cool"
-  end
+  hash.select {|el| el.to_s == "cool"}
 end
 
 def organize_schools(schools)
