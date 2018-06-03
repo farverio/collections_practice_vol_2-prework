@@ -27,7 +27,7 @@ end
 def merge_data(keys, data)
   data.map do |person_obj|
     person_obj.map do |k, v|
-      
+      v.merge!({keys.to_sym => k})
       puts k
       puts v 
     end
