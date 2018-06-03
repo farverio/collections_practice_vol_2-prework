@@ -16,11 +16,11 @@ end
 
 def count_elements(array)
   array.each do |el| 
-    if output_hash.include? el[:name]
-      output_hash[el][:count] += 1
+    el.each do |key, value|
+      puts key
+      puts value
     end
   end
-  output_hash.to_a
 end
 
 def merge_data(keys, data)
