@@ -26,7 +26,6 @@ end
 
 def merge_data(keys, data)
   data.map do |k, v|
-    puts k
     puts v 
   end
 end
