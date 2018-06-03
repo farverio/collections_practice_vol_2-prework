@@ -28,7 +28,7 @@ def merge_data(keys, data)
   output_arr = []
   data.each do |person_obj|
     person_obj.each do |k, v|
-      v.merge({:first_name => k})
+      v.merge!({:first_name => k})
       output_arr << v
       puts k
       puts v 
