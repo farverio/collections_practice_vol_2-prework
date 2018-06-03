@@ -40,14 +40,12 @@ def organize_schools(schools)
   formatted_schools = {}
   
   schools.each do |k, v|
-    puts k
-    puts v[:location].to_sym
-    
-    if !output[v[:location].to_sym]
-      output[[k][:location]] = []
-      output[[k][:location]] << k
+    location_symbol = v[:location].to_sym
+    if !output[location_symbol]
+      output[location_symbol] = []
+      output[location_symbol] << k
     else
-      output[[k][:location]] << k
+      output[location_symbol] << k
     end
   end
   
