@@ -28,7 +28,7 @@ def merge_data(keys, data)
   puts keys
   data.map do |person_obj|
     person_obj.map do |k, v|
-      v.merge!({keys => k})
+      v.merge!(keys)
       puts k
       puts v 
     end
